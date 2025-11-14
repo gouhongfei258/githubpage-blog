@@ -1,0 +1,69 @@
+# 用于构建和部署Hugo网站到GitHub Pages的示例工作流程
+name: 发布Hugo网站到Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.120.2
+    steps:
+      - name: 安装Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: 安装Dart Sass（可选，如果主题需要）
+        run: |
+          sudo npm install -g sass
+
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: 设置Pages
+        id: pages
+        uses: actions/configure-pages@v4  # 👈 升级到 v4
+
+      - name: 使用Hugo构建
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: 上传构建产物到Pages
+        uses: actions/upload-pages-artifact@v3  # 👈 升级到 v3（注意：这是 Pages 专用，不是通用 artifact）
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 部署到GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4  # 👈 升级到 v4
