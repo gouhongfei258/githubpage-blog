@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.120.2
+      HUGO_VERSION: 0.152.2
     steps:
       - name: 安装Hugo CLI
         run: |
@@ -42,7 +42,7 @@ jobs:
 
       - name: 设置Pages
         id: pages
-        uses: actions/configure-pages@v4  # 👈 升级到 v4
+        uses: actions/configure-pages@v4  #升级到 v4
 
       - name: 使用Hugo构建
         env:
@@ -55,7 +55,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: 上传构建产物到Pages
-        uses: actions/upload-pages-artifact@v3  # 👈 升级到 v3（注意：这是 Pages 专用，不是通用 artifact）
+        uses: actions/upload-pages-artifact@v3  #升级到 v3（注意：这是 Pages 专用，不是通用 artifact）
 
   deploy:
     environment:
@@ -66,4 +66,4 @@ jobs:
     steps:
       - name: 部署到GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # 👈 升级到 v4
+        uses: actions/deploy-pages@v4  #升级到 v4
