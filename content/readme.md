@@ -1,7 +1,5 @@
 ```
----
 pin: true
----
 ```
 
 '`Hello World!`' 
