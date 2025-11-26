@@ -1,7 +1,30 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'test'
 theme = "github-style"
+
+[params]
+  headerIcon = "/images/github-mark-white.png"
+  avatar = "/images/avatar.png"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+    lastmod = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+enableGitalk = true
+
+  [params.gitalk]
+    clientID = "GITALK_CLIENT_ID_PLACEHOLDER"
+    clientSecret = "GITALK_CLIENT_SECRET_PLACEHOLDER"
+    repo = "githubpage-blog"
+    owner = "gouhongfei258"
+    admin = "gouhongfei258"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 30
+    pagerDirection = "last"
+    createIssueManually = true
+    distractionFreeMode = false

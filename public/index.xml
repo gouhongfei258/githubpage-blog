@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>test</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on test</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Nov 2025 15:56:08 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Fri, 14 Nov 2025 16:22:40 +0800</pubDate>
+      <guid>http://localhost:1313/post/test/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abstraction show in the post page&#xD;&#xA;&#xA;&#xA;&#xA;&#xA;other content&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>http://localhost:1313/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/readme/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---&#xD;&#xA;pin: true&#xD;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;lsquo;&lt;code&gt;Hello World!&lt;/code&gt;&amp;rsquo;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;个人简介--profile--プロフィール&#34;&gt;个人简介 / Profile / プロフィール&lt;/h1&gt;&#xA;&lt;h2 id=&#34;中文&#34;&gt;中文&lt;/h2&gt;&#xA;&lt;p&gt;本人熟练掌握 .NET 和 Go，熟悉 Java，具备基础的 Vue 和 React 前端开发能力。&lt;br&gt;&#xA;数据库方面，熟练使用 MySQL、SQL Server、SQLite 和 Redis。&lt;br&gt;&#xA;熟练使用 Git 进行版本控制，开发工具包括 Visual Studio 2022 和 VS Code。&lt;br&gt;&#xA;英语能力良好，可流畅阅读英文技术文档并进行基本技术交流；曾自学日语，具备初步理解能力。&lt;br&gt;&#xA;目前从事 .NET Core 后端开发工作，热爱技术，持续学习，致力于构建高性能、高可用的后端系统。&#xA;此外，我也密切关注新兴编程语言的发展，如 &lt;strong&gt;Zig&lt;/strong&gt; ，&lt;strong&gt;Rust&lt;/strong&gt; 和 &lt;strong&gt;MoonBit&lt;/strong&gt;，并尝试学习和理解函数式编程范式，例如通过 &lt;strong&gt;OCaml&lt;/strong&gt; 探索类型系统与程序正确性。&lt;br&gt;&#xA;工作之余，我喜欢一些球类体育运动，尤其喜欢打乒乓球和网球；同时也是一名电子游戏爱好者，常玩CS2,Apex Legends等竞技类游戏。&lt;/p&gt;&#xA;&lt;h2 id=&#34;english&#34;&gt;English&lt;/h2&gt;&#xA;&lt;h2 id=&#34;outside-of-coding-i-enjoy-playing-ping-pong-and-tennis-im-also-an-avid-gamerfrequently-playing-competitive-titles-like-counter-strike-2-cs2-and-apex-legends&#34;&gt;I am proficient in using &lt;strong&gt;.NET&lt;/strong&gt; and &lt;strong&gt;go&lt;/strong&gt; for web developement, with experience in  &lt;strong&gt;Java&lt;/strong&gt;. I also have foundational knowledge of frontend frameworks such as &lt;strong&gt;Vue&lt;/strong&gt; and &lt;strong&gt;React&lt;/strong&gt;.&lt;br&gt;&#xA;On the database side, I work regularly with &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;SQL Server&lt;/strong&gt;, &lt;strong&gt;SQLite&lt;/strong&gt;, and &lt;strong&gt;Redis&lt;/strong&gt;.&lt;br&gt;&#xA;I use &lt;strong&gt;Git&lt;/strong&gt; for version control. I am comfortable with development tools like &lt;strong&gt;Visual Studio 2022&lt;/strong&gt; and &lt;strong&gt;VS Code&lt;/strong&gt;.&lt;br&gt;&#xA;My English proficiency allows me to read technical documentation fluently and communicate effectively on technical topics. I have also taught myself &lt;strong&gt;Japanese&lt;/strong&gt; and can understand basic content.&lt;br&gt;&#xA;Currently, I work as a &lt;strong&gt;.NET Core backend developer&lt;/strong&gt;, passionate about building high-performance, scalable, and reliable backend systems.&#xA;Beyond the above, I actively follow the evolution of emerging languages such as &lt;strong&gt;Zig&lt;/strong&gt; &lt;strong&gt;Rust&lt;/strong&gt;,and &lt;strong&gt;MoonBit&lt;/strong&gt;.Besides, I am exploring functional programming paradigms through languages like &lt;strong&gt;OCaml&lt;/strong&gt; to better understand type systems and program correctness.&lt;br&gt;&#xA;Outside of coding, I enjoy playing ping-pong and tennis. I’m also an avid gamer—frequently playing competitive titles like &lt;strong&gt;Counter-Strike 2 (CS2)&lt;/strong&gt; and &lt;strong&gt;Apex Legends&lt;/strong&gt;.&lt;/h2&gt;&#xA;&lt;h2 id=&#34;日本語&#34;&gt;日本語&lt;/h2&gt;&#xA;&lt;p&gt;.Net および Go 言語 を熟练しており、Java も使用経験があります。&lt;br&gt;&#xA;フロントエンドでは、Vue および React の基礎的な開発が可能です。&lt;br&gt;&#xA;データベースは MySQL、SQL Server、SQLite、Redis を日常的に利用しています。&lt;br&gt;&#xA;バージョン管理には Git を使いこなし、開発環境は Visual Studio 2022 や VS Code を主に使用しています。&lt;br&gt;&#xA;英語は技術文書をスムーズに読解でき、基本的な技術コミュニケーションが可能です。また、日本語も独学で学習しており、初歩的な理解力があります。&lt;br&gt;&#xA;現在は .NET Core を用いたバックエンド開発に従事しており、高性能かつ信頼性の高いシステム構築に情熱を注いでいます。&#xA;さらに、新興プログラミング言語（例：&lt;strong&gt;Zig&lt;/strong&gt; や &lt;strong&gt;MoonBit&lt;/strong&gt;）の動向にも関心を持ち、&lt;strong&gt;OCaml&lt;/strong&gt; などを通じて関数型プログラミングや型システムによるプログラムの正確性について学びを深めています。&lt;br&gt;&#xA;コーディング以外では、卓球やテニスなどのスポーツを楽しみ、電子ゲームも好きです。特に『CS2』や『Apex Legends』といった競技性の高いタイトルをプレイしています。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

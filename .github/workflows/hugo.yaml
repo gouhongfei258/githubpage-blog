@@ -77,6 +77,13 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Replace Gitalk secrets in config
+        env:
+        GITALK_CLIENT_ID: ${{ secrets.GITALK_CLIENT_ID }}
+        GITALK_CLIENT_SECRET: ${{ secrets.GITALK_CLIENT_SECRET }}
+        run: |
+          sed -i "s/GITALK_CLIENT_ID_PLACEHOLDER/$GITALK_CLIENT_ID/g" hugo.toml
+          sed -i "s/GITALK_CLIENT_SECRET_PLACEHOLDER/$GITALK_CLIENT_SECRET/g" hugo.toml
       - name: Build the site
         run: |
           hugo \
