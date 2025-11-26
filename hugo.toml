@@ -1,7 +1,50 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'BlogOfStorm'
+baseURL = 'https://gouhongfei258.github.io/githubpage-blog'
+languageCode = 'zh-cn'
+title = ''
 theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+    lastmod = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+
+[params]
+  author = "storm"
+  description = "In solitude, where we are least alone."
+  github = "gouhongfei258"
+  email = "lapgame0517@Outlook.com"
+
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/githubpage-blogimages/github-mark.png"
+  avatar = "/githubpage-blog/images/avatar.png"
+  headerIcon = "/githubpage-blog/images/github-mark-white.png"
+  location = "Guangdong China"
+  userStatusEmoji = "😀"
+  enableGitalk = true
+  enableSearch = true
+  [params.gitalk]
+    clientID = "GITALK_CLIENT_ID_PLACEHOLDER"
+    clientSecret = "GITALK_CLIENT_SECRET_PLACEHOLDER"
+    repo = "githubpage-blog"
+    owner = "gouhongfei258"
+    admin = "gouhongfei258"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 30
+    pagerDirection = "last"
+    createIssueManually = false
+    distractionFreeMode = false
+  [[params.links]]
+    title = "Link"
+    href = "https://myresume-cs8.pages.dev"
+
+[services]
+  [services.googleAnalytics]
+    ID = "UA-107784973-4"
