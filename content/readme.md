@@ -16,7 +16,7 @@ Passionate backend developer building reliable, high-performance systems with .N
 通过 OCaml 学习函数式编程、类型系统与程序正确性
 🏓 兴趣爱好：
 体育：乒乓球、网球
-游戏：常玩《CS2》《Apex Legends》等竞技类游戏
+游戏：CS2,Apex Legends
 
 <details>
 <summary><b>🇺🇸 English</b></summary>
@@ -33,7 +33,7 @@ Emerging languages like Zig, Rust, and MoonBit
 Functional programming & type theory via OCaml to understand program correctness
 🏓 Hobbies:
 Sports: Table tennis, tennis
-Gaming: Regular player of competitive titles like Counter-Strike 2 (CS2) and Apex Legends
+Gaming:  Counter-Strike 2 (CS2) and Apex Legends
 
 </details>
 
@@ -52,7 +52,7 @@ Zig、Rust、MoonBit などの新興プログラミング言語の動向に注�
 OCaml などを通じて、関数型プログラミングや型システムによるプログラムの正確性を学習中
 🏓 趣味：
 スポーツ：卓球、テニス
-ゲーム：『CS2』や『Apex Legends』といった競技性の高いタイトルをプレイ
+ゲーム：『CS2』,『Apex Legends』
 
 </details>
 
