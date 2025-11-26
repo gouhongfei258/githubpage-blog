@@ -25,7 +25,7 @@ pygmentsUseClasses = true
   favicon = "/images/github-mark.png"
   avatar = "/images/avatar.png"
   headerIcon = "/images/github-mark-white.png"
-  location = "China"
+  location = "Guangdong China"
   userStatusEmoji = "😀"
   enableGitalk = true
   enableSearch = true
@@ -39,7 +39,7 @@ pygmentsUseClasses = true
     labels = "gitalk"
     perPage = 30
     pagerDirection = "last"
-    createIssueManually = true
+    createIssueManually = false
     distractionFreeMode = false
   [[params.links]]
     title = "Link"
