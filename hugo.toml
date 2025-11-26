@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://gouhongfei258.github.io/githubpage-blog'
 languageCode = 'zh-cn'
 title = ''
 theme = "github-style"
@@ -47,4 +47,4 @@ pygmentsUseClasses = true
 
 [services]
   [services.googleAnalytics]
-    ID = "UA-123456-789"
+    ID = "UA-107784973-4"
