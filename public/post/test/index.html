@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-cn">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -10,9 +10,9 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>Test - test</title>
+    <title>Test - </title>
     
-    <link rel="icon" type="image/x-icon" href='http://localhost:1313/images/favicon.ico'>
+    <link rel="icon" type="image/x-icon" href='/images/github-mark.png'>
     
     <meta name="theme-color" content="#1e2327">
 
@@ -23,13 +23,13 @@
     <meta name="description"
   content="abstraction show in the post pageother content " />
 <meta name="keywords"
-  content='' />
+  content='blog, google analytics' />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="http://localhost:1313/post/test/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Test - test" />
+<meta name="twitter:title" content="Test - " />
 <meta name="twitter:description"
   content="abstraction show in the post pageother content " />
 <meta name="twitter:site" content="http://localhost:1313/" />
@@ -39,7 +39,7 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Test - test">
+<meta property="og:title" content="Test - ">
 <meta property="og:description"
   content="abstraction show in the post pageother content " />
 <meta property="og:url" content="http://localhost:1313/post/test/" />
@@ -87,14 +87,13 @@
         class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
         <div class="position-relative">
           
-          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
             autocomplete="off">
             <label
               class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
               <input type="text"
                 class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
                 name="q" value="" placeholder="Search" autocomplete="off">
-              <input type="hidden" name="q" value="site:http://localhost:1313/">
             </label>
           </form>
           
@@ -141,7 +140,7 @@
               <div class="d-flex flex-column">
                 <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                   <span class="author">
-                    <a href="http://localhost:1313/"></a>
+                    <a href="http://localhost:1313/">storm</a>
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
@@ -153,6 +152,11 @@
                     class="no-wrap">
                     Fri, 14 Nov 2025 16:22:40 &#43;0800</relative-time>
 
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Tue, 25 Nov 2025 15:56:08 &#43;0800"
+                    class="no-wrap">
+                    Tue, 25 Nov 2025 15:56:08 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -212,6 +216,24 @@ other content
 <link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
 
   
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='http://localhost:1313/css/gitalk.css'>
+<script src='http://localhost:1313/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'GITALK_CLIENT_ID_PLACEHOLDER',
+    clientSecret: 'GITALK_CLIENT_SECRET_PLACEHOLDER',
+    repo: 'githubpage-blog',
+    owner: 'gouhongfei258',
+    admin: ['gouhongfei258'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
 </div>
 
   <div class="footer container-xl width-full p-responsive">
@@ -245,6 +267,9 @@ other content
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='http://localhost:1313/js/search.js'></script>
 
 
 

@@ -1,11 +1,9 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'test'
+languageCode = 'zh-cn'
+title = ''
 theme = "github-style"
-
-[params]
-  headerIcon = "/images/github-mark-white.png"
-  avatar = "/images/avatar.png"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
@@ -14,8 +12,23 @@ theme = "github-style"
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
-enableGitalk = true
 
+[params]
+  author = "storm"
+  description = "In solitude, where we are least alone."
+  github = "gouhongfei258"
+  email = "lapgame0517@Outlook.com"
+
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/images/github-mark.png"
+  avatar = "/images/avatar.png"
+  headerIcon = "/images/github-mark-white.png"
+  location = "China"
+  userStatusEmoji = "😀"
+  enableGitalk = true
+  enableSearch = true
   [params.gitalk]
     clientID = "GITALK_CLIENT_ID_PLACEHOLDER"
     clientSecret = "GITALK_CLIENT_SECRET_PLACEHOLDER"
@@ -28,3 +41,10 @@ enableGitalk = true
     pagerDirection = "last"
     createIssueManually = true
     distractionFreeMode = false
+  [[params.links]]
+    title = "Link"
+    href = "https://myresume-cs8.pages.dev"
+
+[services]
+  [services.googleAnalytics]
+    ID = "UA-123456-789"
